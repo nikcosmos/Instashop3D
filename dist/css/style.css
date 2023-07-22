@@ -27,50 +27,66 @@
   --base-text-color: #4f4f4f;
   --gradient-text-color: linear-gradient(
      135deg,
-     rgb(51, 51, 51),
-     rgb(8, 110, 20)
+     rgba(51, 51, 51, 0.7),
+     rgba(110, 110, 110, 1)
   );
   --bg-body: #f9f8f8;
   --bg-wrapper: #f9f8f8;
-  --burger-bg: linear-gradient(135deg, #f9f8f8 0%, rgb(73, 139, 79) 170%);
+  --burger-bg: linear-gradient(
+     135deg,
+     #f9f8f8 40%,
+     rgba(110, 110, 110, 1) 170%
+  );
   --burger-border-radius: 20px;
   --burger-icon-color: #4f4f4f;
   --burger-list-title: rgba(110, 110, 110, 1);
-  --burger-lang-item-color-active: linear-gradient(
-     135deg,
-     #e3ff77 0%,
-     #60f519 100%
-  );
+  --burger-lang-item-color-active: #fff;
   --tabs-bg: linear-gradient(
      135deg,
-     rgba(227, 255, 119, 0.1) 0%,
-     rgba(96, 245, 25, 0.1) 100%
+     rgba(51, 51, 51, 0.2) 0%,
+     rgba(110, 110, 110, 0.2) 100%
   );
   --tabs-text-color: #4f4f4f;
-  --tabs-active-bg: linear-gradient(135deg, #e3ff77 0%, #60f519 100%);
-  --tabs-text-active-color: #4f4f4f;
+  --tabs-active-bg: linear-gradient(
+     135deg,
+     rgba(51, 51, 51, 0.5) 0%,
+     rgba(110, 110, 110, 0.5) 100%
+  );
+  --tabs-text-active-color: #ffffff;
   --tabs-border-radius: 12px;
-  --screen-bg: #e6e1e1;
-  --screen-border-color: rgba(96, 245, 25, 0.4);
+  --screen-bg: #ffffff;
+  --screen-border-color: rgba(110, 110, 110, 0.5);
   --screen-border-radius: 16px;
-  --screen-img-bg: radial-gradient(
-     66.23% 70.71% at 50% 50%,
-     rgba(227, 255, 119, 0.36) 0%,
-     rgba(96, 245, 25, 0.36) 100%
+  --screen-img-bg: linear-gradient(
+     135deg,
+     rgba(51, 51, 51, 0.3) 0%,
+     rgba(110, 110, 110, 0.3) 100%
   );
   --screen-img-bg-size: 320px;
-  --quote-color: #60f519;
-  --label-bg: linear-gradient(135deg, #e3ff77 0%, #60f519 100%);
-  --label-text-color: #4f4f4f;
-  --pagination-bg: rgba(255, 255, 255, 1);
-  --pagination-bg-active: #60f519;
-  --button-bg: linear-gradient(135deg, #e3ff77 0%, #60f519 100%);
-  --button-text-color: #4f4f4f;
+  --quote-color: #000000;
+  --label-bg: linear-gradient(
+     135deg,
+     rgba(51, 51, 51, 0.5) 0%,
+     rgba(110, 110, 110, 0.5) 100%
+  );
+  --label-text-color: #ffffff;
+  --pagination-bg: rgba(110, 110, 110, 0.3);
+  --pagination-bg-active: rgba(110, 110, 110, 1);
+  --button-bg: linear-gradient(
+     135deg,
+     rgba(51, 51, 51, 1) 0%,
+     rgba(110, 110, 110, 1) 100%
+  );
+  --button-text-color: #ffffff;
   --input-bg: linear-gradient(135deg, #f9f8f8 0%, rgba(68, 72, 69, 0.2) 100%);
   --input-text-color: #4f4f4f;
   --input-error-color: red;
-  --site-loader-bg: linear-gradient(135deg, #e3ff77 0%, #60f519 100%);
-  --sity-loader-color-1: #4f4f4f;
+  --site-loader-bg: linear-gradient(
+     135deg,
+     rgba(51, 51, 51, 1) 0%,
+     rgba(110, 110, 110, 1) 100%
+  );
+  --sity-loader-color-1: #ffffff;
   --sity-loader-color-2: #f9f8f8;
   --lazy-loader-color: #4f4f4f;
   --lazy-loader-size: 30px;
@@ -989,6 +1005,10 @@ img[data-ll-status]._lazy-loaded + .lazy-loader {
   overflow: hidden;
 }
 
+.screen-temp.first-screen {
+  overflow: visible;
+}
+
 .fix-btn .screen-temp {
   padding: 30px 20px 70px;
 }
@@ -1110,7 +1130,7 @@ img[data-ll-status]._lazy-loaded + .lazy-loader {
 }
 
 .screen-temp__iframe {
-  margin: auto -20px;
+  margin: auto -35px;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
