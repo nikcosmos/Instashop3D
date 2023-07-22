@@ -7,6 +7,9 @@
    flex-direction: column;
    gap: 10px;
    overflow: hidden;
+   &.first-screen {
+      overflow: visible;
+   }
    .fix-btn & {
       padding: 30px 20px 70px;
    }
@@ -84,7 +87,7 @@
    }
    // Iframe
    &__iframe {
-      margin: auto -20px;
+      margin: auto -35px;
       flex: 1 1 auto;
       position: relative;
       iframe {
