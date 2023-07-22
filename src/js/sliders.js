@@ -7,7 +7,7 @@ const initializedSliderList = sliderList.map((slider) => {
       modules: [Pagination],
       slidesPerView: 1,
       speed: 1200,
-      spaceBetween: 20,
+      spaceBetween: 40,
       watchOverflow: true,
       pagination: {
          enabled: true,
